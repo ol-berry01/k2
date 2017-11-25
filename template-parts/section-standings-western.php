@@ -54,7 +54,7 @@
         <div class="tab-content">
             <div role="tabpanel" class="tab-pane fade in active" id="mixed">
 
-            <div class="" dir="" style="text-align:center;">
+                <div class="" dir="" style="text-align:center;">
                     <table class="waffle" cellspacing="0" cellpadding="0">
                         <thead>
                             <tr>
@@ -262,16 +262,193 @@
                         </tbody>
                     </table>
                 </div>
-
             </div>
             <!-- End: Mixed -->
             <div role="tabpanel" class="tab-pane fade" id="snowboarding">
-
+                <div class="" dir="" style="text-align:center;">
+                    <table class="waffle" cellspacing="0" cellpadding="0">
+                        <thead>
+                            <tr>
+                                <!-- <th class="row-header freezebar-origin-ltr"></th> -->
+                                <th>Position</th>
+                                <th>Team</th>
+                                <th >Round 1</th>
+                                <th >Round 2</th>
+                                <th >Round 3</th>
+                                <th >Round 4</th>
+                                <th >Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td >1</td>
+                                <td><div class="team">Cardiff 1</div></td>
+                                <td >6</td>
+                                <td >10</td>
+                                <td >0</td>
+                                <td >0</td>
+                                <td >16</td>
+                            </tr>
+                            <tr>
+                                <td >2</td>
+                                <td class="team">Swansea 1</td>
+                                <td >10</td>
+                                <td >5</td>
+                                <td >0</td>
+                                <td >0</td>
+                                <td >16</td>
+                            </tr>
+                            <tr>
+                                <td >3</td>
+                                <td class="team">Exeter 1</td>
+                                <td >4</td>
+                                <td >8</td>
+                                <td >0</td>
+                                <td >0</td>
+                                <td >12</td>
+                            </tr>
+                            <tr>
+                                <td >4</td>
+                                <td class="team">USW</td>
+                                <td >5</td>
+                                <td >6</td>
+                                <td >0</td>
+                                <td >0</td>
+                                <td >11</td>
+                            </tr>
+                            <tr>
+                                <td >5</td>
+                                <td class="team">UWE 1</td>
+                                <td >8</td>
+                                <td >0</td>
+                                <td >0</td>
+                                <td >0</td>
+                                <td >11</td>
+                            </tr>
+                            <tr>
+                                <td >6</td>
+                                <td class="team">Bristol 1</td>
+                                <td >3</td>
+                                <td >0</td>
+                                <td >0</td>
+                                <td >0</td>
+                                <td >0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
             <!-- End: Snowboarding -->
     
             <div role="tabpanel" class="tab-pane fade" id="ladies">
-                
+                <div class="" dir="" style="text-align:center;">
+                    <table class="waffle" cellspacing="0" cellpadding="0">
+                        <thead>
+                            <tr>
+                                <!-- <th class="row-header freezebar-origin-ltr"></th> -->
+                                <th>Position</th>
+                                <th>Team</th>
+                                <th >Round 1</th>
+                                <th >Round 2</th>
+                                <th >Round 3</th>
+                                <th >Round 4</th>
+                                <th >Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td >1</td>
+                                <td><div class="team">Bristol 1</div></td>
+                                <td >10</td>
+                                <td >10</td>
+                                <td >0</td>
+                                <td >0</td>
+                                <td >20</td>
+                            </tr>
+                            <tr>
+                                <td >2</td>
+                                <td class="team">Bath 1</td>
+                                <td >8</td>
+                                <td >8</td>
+                                <td >0</td>
+                                <td >0</td>
+                                <td >16</td>
+                            </tr>
+                            <tr>
+                                <td >3</td>
+                                <td class="team">Cardiff 1</td>
+                                <td >5</td>
+                                <td >6</td>
+                                <td >0</td>
+                                <td >0</td>
+                                <td >11</td>
+                            </tr>
+                            <tr>
+                                <td >4</td>
+                                <td class="team">UWE 1</td>
+                                <td >4</td>
+                                <td >5</td>
+                                <td >0</td>
+                                <td >0</td>
+                                <td >9</td>
+                            </tr>
+                            <tr>
+                                <td >5</td>
+                                <td class="team">Exeter 1</td>
+                                <td >6</td>
+                                <td >2</td>
+                                <td >0</td>
+                                <td >0</td>
+                                <td >8</td>
+                            </tr>
+                            <tr>
+                                <td >6</td>
+                                <td class="team">Bristol 2</td>
+                                <td >1</td>
+                                <td >4</td>
+                                <td >0</td>
+                                <td >0</td>
+                                <td >5</td>
+                            </tr>
+                            <tr>
+                                <td >6</td>
+                                <td class="team">Bristol 3</td>
+                                <td >2</td>
+                                <td >3</td>
+                                <td >0</td>
+                                <td >0</td>
+                                <td >5</td>
+                            </tr>
+                            <tr>
+                                <td >8</td>
+                                <td class="team">Swansea 1</td>
+                                <td >3</td>
+                                <td >0</td>
+                                <td >0</td>
+                                <td >0</td>
+                                <td >3</td>
+                            </tr>
+                            <tr>
+                                <td >9</td>
+                                <td class="team">Aber 1</td>
+                                <td >1</td>
+                                <td >1</td>
+                                <td >0</td>
+                                <td >0</td>
+                                <td >2</td>
+                            </tr>
+                            <tr>
+                                <td >10</td>
+                                <td class="team">Plymouth 1</td>
+                                <td >1</td>
+                                <td >0</td>
+                                <td >0</td>
+                                <td >0</td>
+                                <td >1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
             <!-- End: Ladies -->
 
