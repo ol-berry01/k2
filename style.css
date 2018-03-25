@@ -1,15 +1,15 @@
 @charset "UTF-8";
 /*
-Theme Name: k2
+Theme Name: K2
 Theme URI: http://littlemonsterdigital.co.uk
 Author: Little Monster Digital
 Author URI: http://littlemonsterdigital.co.uk
 Description: k2 is a WordPress theme developed for Kings Ski Club to promote the club, allow teams to register to race, display results from rounds or Finals, advertise the clubs sponsors to memebers and act as a focus for all the clubs news & events
-Version: 1.0.1
+Version: 1.2
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.en.html
-Text Domain: k2
-Tags: kings ski club
+Text Domain: K2
+Tags: Kings Ski Club
 */
 /*
 ----------------------------------------------------------------
@@ -36,9 +36,6 @@ LESS Variables and Mixins
 0. Global Styles
 ========================================== 
 */
-html {
-  
-}
 html, a {
   color:#c3f216;
   transition: 400ms;
@@ -47,10 +44,15 @@ a:hover {
   color:#999999;
 }
 body {
-  
+  background:#333;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family:arial, sans-serif;
+  color:#c3f216;
+  text-align:center;
+}
+.ksc-green {
+  color:#c3f216;
 }
 /*
 ==========================================
@@ -68,9 +70,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0.9375rem 0;
   background-size: cover;
   background-position: center;
-}
-.site-header {
-  
 }
 .home.page #header {
   margin-bottom: 0;
@@ -103,6 +102,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .logo_container {
   margin: 0;
+  padding:9px 0 0;
   text-align:center;
   display: block;
 }
@@ -183,13 +183,12 @@ Nav Menu
   margin: 0;
   display: block;
   min-height: 0;
-  padding-top:10px;
   text-align: right;
   border: none;
 }
 #jqueryslidemenu a {
   color: #c3f216;
-  trasition:1000ms;
+  transition:1000ms;
 }
 #jqueryslidemenu a:hover {
   opacity:0.7;
@@ -342,7 +341,6 @@ Login and Cart Buttons
 }
 /* Login ------------*/
 .login_btn_wrap {
-  display: inline-block;
   float: right;
 }
 .ql_login-btn {
@@ -359,7 +357,6 @@ Login and Cart Buttons
 /* Cart ------------*/
 .ql_cart_wrap {
   display: inline-block;
-  float: right;
   position: relative;
   overflow: hidden;
 }
@@ -1155,7 +1152,7 @@ Image Section
   background-size: cover;
 }
 .image-section .btn-ql-nuco:hover {
-  color:#222e3c;	
+  color:#222e3c;  
   border:1px solid #222e3c;
 }
 .image-text {
@@ -1883,7 +1880,6 @@ Portfolio Section
   width: 25%;
   height: 25%;
   display: block;
-  vertical-align: top;
   margin: 0;
   position: relative;
   float: left;
@@ -2019,7 +2015,7 @@ Animation Overflow
   -o-transform: translate(0, 0);
   transform: translate(0, 0);
 }
-/*Post Title 								*/
+/*Post Title                */
 /*------------------------------------------*/
 .post-title {
   margin-bottom: 0.88235294117647em;
@@ -2029,7 +2025,7 @@ Animation Overflow
   color: inherit;
   text-align: left;
 }
-/*Post										*/
+/*Post                    */
 /*------------------------------------------*/
 .blog article,
 .search article,
@@ -2041,13 +2037,13 @@ Animation Overflow
   margin-bottom: 4.375em;
   padding-bottom: 0;
 }
-/*More Link									*/
+/*More Link                 */
 /*------------------------------------------*/
 .more-link {
   display: block;
   clear: both;
 }
-/*Image Post								*/
+/*Image Post                */
 /*------------------------------------------*/
 .post-image {
   overflow: hidden;
@@ -2070,7 +2066,7 @@ Animation Overflow
   -o-transition: all 200ms linear;
   transition: all 200ms linear;
 }
-/*Metadata 									*/
+/*Metadata                  */
 /*------------------------------------------*/
 .metadata {
   margin: 1.78571428571429em 0;
@@ -2121,12 +2117,12 @@ Animation Overflow
 .metadata hr {
   margin: 0;
 }
-/* Page Headers															*/
+/* Page Headers                             */
 /*----------------------------------------------------------------------*/
 .page-header {
   margin-bottom: 70px;
 }
-/* Archive and Search													*/
+/* Archive and Search                         */
 /*----------------------------------------------------------------------*/
 .archive .post,
 .search .post,
@@ -2139,7 +2135,7 @@ Animation Overflow
 .archive .post .metadata {
   margin-bottom: 0;
 }
-/* 404																	*/
+/* 404                                  */
 /*----------------------------------------------------------------------*/
 .widgets-404 {
   margin: 100px 0;
@@ -2161,7 +2157,7 @@ Animation Overflow
   border-color: #555555;
   color: #fff;
 }
-/*Pagination															*/
+/*Pagination                              */
 /*----------------------------------------------------------------------*/
 .pagination_wrap {
   text-align: center;
@@ -2439,7 +2435,6 @@ Tag Widget
   margin-top: 20px;
 }
 #sidebar .widget_tag ul li {
-  display: inline-block;
   margin: 0 0.90909090909091em 0.90909090909091em 0;
   float: left;
   border: none;
@@ -2800,7 +2795,7 @@ footer .twitter_widget .twitter li a:hover {
 footer .social a {
   margin: 7px 7px 7px 0;
 }
-/*Quick Contact													*/
+/*Quick Contact                         */
 /*--------------------------------------------------------------*/
 footer .quick_contact .form {
   position: relative;
@@ -3147,7 +3142,7 @@ Payments Options
 ========================================== 
 */
 /*===========================================================================*/
-/*Comments																	 */
+/*Comments                                   */
 /*===========================================================================*/
 #comments {
   margin-bottom: 70px;
@@ -3223,7 +3218,7 @@ Payments Options
   color: #999999;
 }
 /*===========================================================================*/
-/*Comments	Form															 */
+/*Comments  Form                               */
 /*===========================================================================*/
 #respond {
   margin: 70px 0;
@@ -3922,12 +3917,12 @@ a img.aligncenter {
 }
 .wpcf7 input[type="text"],
 .wpcf7 input[type="email"] {
-  width: 50%;
+  width: 100%;
 }
 .wpcf7 select {
   font-size: 14px;
   font-size: 0.875rem;
-  width:33%
+  width:33%;
 }
 .wpcf7 input[type="checkbox"],
 .wpcf7 input[type="radio"] {
@@ -3943,22 +3938,23 @@ a img.aligncenter {
   line-height: 20px;
 }
 .wpcf7 textarea {
-  width: 80%;
+  width: 100%;
 }
 input.wpcf7-tel {
-    width: 50%;
+    width: 100%;
 }
 .wpcf7 input[type="submit"] {
-  width: auto;
-  border-color: #555555;
+  padding: 30px 20px;
+  line-height:1px;
   -webkit-transition: background-color 200ms;
   -o-transition: background-color 200ms;
   transition: background-color 200ms;
-  padding: 6px 15px;
 }
-.wpcf7 input[type="submit"]:hover {
-  background-color: #555555;
-  color: #fff;
+.wpcf7 input[type="submit"]:hover,
+.wpcf7 input[type="submit"]:focus {
+  background:#333;
+  color:#c3f216;
+  border:1px solid #c3f216;
 }
 .wpcf7 input[disabled="disabled"] {
   opacity: 0.3;
@@ -3968,6 +3964,12 @@ input.wpcf7-tel {
 }
 .wpcf7-not-valid {
   border-color: red;
+}
+.select-club {
+  width:100%;
+}
+.select-teams {
+  margin:0 auto;
 }
 /*
 // Visual Composer
@@ -4110,6 +4112,50 @@ img {
   max-width: 100%;
   height: auto;
 }
+.nav-tabs > li{
+  width: 33%;
+  text-align: center;
+  transition:300ms;
+}
+.nav-tabs > li > a {
+  color:#c3f216;
+}
+.nav-tabs > li > a:hover {
+  color:#555;
+}
+.tab-pane {
+  padding:25px 0 75px 0;
+}
+.league-table .league-table-head{
+  font-size:1.1em;
+  font-weight:600;
+}
+.league-table ul{
+  list-style:none;
+  padding: 0 0 0.4em;
+  border-bottom:1px solid #808080;
+}
+.league-table .tbl-pos{
+  width:5%;
+}
+.league-table .tbl-team{
+  width:30%;
+}
+li.tbl-qlf {
+  margin-bottom:0.5em;
+  padding-bottom:0.5em;
+  list-style: none;
+}
+li.tbl-qlf.tbl-last {
+  border-bottom:none;
+}
+.row.qualified-table {
+  text-align:center;
+}
+.row.wildcards {
+  padding: 1em 0;
+  text-align:center;
+}
 /* Section Title
 -------------------------------------------------- */
 .section-title {
@@ -4226,6 +4272,19 @@ img {
 -------------------------------------------------- */
 /* Override base .btn styles */
 /* Apply text and background changes to three key states: default, hover, and active (click). */
+.btn-kings{
+  background:#c3f216;
+  color:#333;
+  border:1px solid #c3f216;
+  margin:0 auto;
+  padding:1em 2.5em;
+  border-radius: 3px;
+  transition:500ms;
+}
+.btn-kings:hover {
+  background:#333;
+  color:#c3f216;
+}
 .btn-ql,
 .btn-ql:hover,
 .btn-ql:active {
@@ -4428,7 +4487,7 @@ Hide the icon
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/*Hero Colors Classes													*/
+/*Hero Colors Classes                         */
 /*----------------------------------------------------------------------*/
 .hero_bck {
   background-color: #172c3d;
@@ -4451,12 +4510,12 @@ Hide the icon
 .contrast_bck {
   background-color: #fff;
 }
-/* Make Space between sections											*/
+/* Make Space between sections                      */
 /*----------------------------------------------------------------------*/
 .clear_space {
   margin: 2.30769230769231em 0;
 }
-/* Hover effect for thumbnails											*/
+/* Hover effect for thumbnails                      */
 /*----------------------------------------------------------------------*/
 .ql_thumbnail_hover {
   position: relative;
@@ -4523,9 +4582,9 @@ Hide the icon
   -o-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* Font size using REMs													*/
+/* Font size using REMs                         */
 /*----------------------------------------------------------------------*/
-/* Inputs																*/
+/* Inputs                               */
 /*----------------------------------------------------------------------*/
 input,
 textarea {
@@ -4536,7 +4595,6 @@ textarea {
   font-size: 16px;
   line-height: 1.42857143;
   color: #555555;
-  vertical-align: middle;
   background-color: #fff;
   background-image: none;
   border: 2px solid #ccc;
@@ -4585,20 +4643,21 @@ textarea {
 ========================================== 
 */
 /*
-	// Extra Small Breakpoint
-	// ------------------
-	*/
+  // Extra Small Breakpoint
+  // ------------------
+  */
 @media (max-width: 767px) {
   /*
-	Header
-	========================================== 
-	*/
+  Header
+  ========================================== 
+  */
   .logo_container {
     position: relative;
     display: block;
     float: none;
     margin-right: 0;
     width: 82%;
+    min-width:271px;
   }
   .logo_container a:hover {
     text-decoration: none;
@@ -4655,9 +4714,9 @@ textarea {
     display: none;
   }
   /*
-	Home
-	========================================== 
-	*/
+  Home
+  ========================================== 
+  */
   .welcome-intro .intro-line {
     font-size: 18px;
     font-size: 1.125rem;
@@ -4676,8 +4735,8 @@ textarea {
     margin-bottom: 15%;
   }
   /*
-	Quote Section
-	---------------------------------------*/
+  Quote Section
+  ---------------------------------------*/
   .quote-wrap {
     display: block;
     width: 100%;
@@ -4696,8 +4755,8 @@ textarea {
     font-size: 0.875rem;
   }
   /*
-	Video Section
-	---------------------------------------*/
+  Video Section
+  ---------------------------------------*/
   .video-wrap {
     display: block;
     width: 100%;
@@ -4708,8 +4767,8 @@ textarea {
     padding: 10%;
   }
   /*
-	Testimonials Section
-	---------------------------------------*/
+  Testimonials Section
+  ---------------------------------------*/
   .testimonials-section {
     padding: 14% 5%;
   }
@@ -4718,8 +4777,8 @@ textarea {
     font-size: 1.375rem;
   }
   /*
-	Image Section
-	---------------------------------------*/
+  Image Section
+  ---------------------------------------*/
   .image-section .image-wrap {
     position: relative;
     top: auto;
@@ -4740,8 +4799,8 @@ textarea {
     font-size: 0.875rem;
   }
   /*
-	NUCO Section
-	---------------------------------------*/
+  NUCO Section
+  ---------------------------------------*/
   .nuco-section .nuco-wrap {
     position: relative;
     top: auto;
@@ -4762,8 +4821,8 @@ textarea {
     font-size: 0.875rem;
   }
   /*
-	Team Section
-	---------------------------------------*/
+  Team Section
+  ---------------------------------------*/
   .team-section {
     padding: 10% 0;
   }
@@ -4782,8 +4841,8 @@ textarea {
     vertical-align: top;
   }
   /*
-	Phone Section
-	---------------------------------------*/
+  Phone Section
+  ---------------------------------------*/
   .about-section {
     padding: 10%;
   }
@@ -4799,13 +4858,13 @@ textarea {
     margin: 0 0 8%;
   }
   /*
-	Tagline Section
-	---------------------------------------*/
+  Tagline Section
+  ---------------------------------------*/
   .tagline-section a {
     padding: 5% 10%;
   }
   .tagline-section .tagline {
-	color:#c3f216;
+  color:#c3f216;
     font-size: 24px;
     font-size: 1.5rem;
   }
@@ -4814,8 +4873,8 @@ textarea {
     font-size: 0.875rem;
   }
   /*
-	Client Section
-	---------------------------------------*/
+  Client Section
+  ---------------------------------------*/
   .clients-section {
     padding: 10% 0;
   }
@@ -4829,8 +4888,8 @@ textarea {
     margin: 5%;
   }
   /*
-	Map Section
-	---------------------------------------*/
+  Map Section
+  ---------------------------------------*/
   .map-wrap {
     position: relative;
     left: 0;
@@ -4847,8 +4906,8 @@ textarea {
     padding: 10%;
   }
   /*
-	Pricing Section
-	---------------------------------------*/
+  Pricing Section
+  ---------------------------------------*/
   .cd-pricing-header h2 {
     font-size: 16px;
     font-size: 1rem;
@@ -4864,8 +4923,8 @@ textarea {
     opacity: 0.7;
   }
   /*
-	Portfolio Section
-	---------------------------------------*/
+  Portfolio Section
+  ---------------------------------------*/
   .portfolio-section .portfolio-item {
     width: 50%;
     height: 50%;
@@ -4878,8 +4937,8 @@ textarea {
     font-size: 1rem;
   }
   /*
-	Blog Section
-	---------------------------------------*/
+  Blog Section
+  ---------------------------------------*/
   .blog-section {
     padding: 7% 10%;
   }
@@ -4888,9 +4947,9 @@ textarea {
     margin-right: 5%;
   }
   /*
-	Content
-	--------------------------------
-	*/
+  Content
+  --------------------------------
+  */
   .metadata {
     display: block;
   }
@@ -4901,9 +4960,9 @@ textarea {
     width: 100%;
   }
   /*
-	Sidebar
-	========================================== 
-	*/
+  Sidebar
+  ========================================== 
+  */
   #sidebar {
     padding-right: 0;
   }
@@ -4912,9 +4971,9 @@ textarea {
     width: 100%;
   }
   /*
-	Footer
-	========================================== 
-	*/
+  Footer
+  ========================================== 
+  */
   .sub_footer p {
     margin-bottom: 20px;
     float: none;
@@ -4928,40 +4987,49 @@ textarea {
   }
 }
 /*
-	// Small Breakpoint
-	// ------------------
-	*/
+  // Small Breakpoint
+  // ------------------
+  */
 @media (min-width: 768px) and (max-width: 1345px) {
+  body {
+    padding:40px 0 0;
+  }
   .container {
     width: 96%;
   }
   /*
-	Header
-	========================================== 
-	*/
+  Header
+  ========================================== 
+  */
+  .navbar-fixed-top {
+    height:40px;
+  }
   .logo_container {
-    margin-bottom: 10px;
-	padding-top:7px;
-	padding-bottom:7px;
+    min-width:270px;
+    padding-top:9px;
+    padding-bottom:9px;
     text-align: center;
+  }
+  .logo_container h4 {
+    margin-bottom:0;
   }
   #jqueryslidemenu {
     text-align: right;
   }
   /*
-	Home
-	========================================== 
-	*/
+  Home
+  ========================================== 
+  */
   /*
-	Welcome Section
-	---------------------------------------*/
+  Welcome Section
+  ---------------------------------------*/
   .welcome-intro .intro-line {
     font-size: 38px;
     font-size: 2.375rem;
   }
   /*
-	Quote Section
-	---------------------------------------*/
+  Quote Section
+  ---------------------------------------*/
   .quote-wrap blockquote {
     font-size: 16px;
     font-size: 1rem;
@@ -4971,8 +5039,8 @@ textarea {
     font-size: 0.875rem;
   }
   /*
-	Video Section
-	---------------------------------------*/
+  Video Section
+  ---------------------------------------*/
   .video-wrap {
     display: block;
     width: 100%;
@@ -4983,14 +5051,14 @@ textarea {
     padding: 10%;
   }
   /*
-	Testimonials Section
-	---------------------------------------*/
+  Testimonials Section
+  ---------------------------------------*/
   .testimonials-section {
     padding: 10% 10%;
   }
   /*
-	Image Section
-	---------------------------------------*/
+  Image Section
+  ---------------------------------------*/
   .image-section .image-wrap {
     position: relative;
     top: auto;
@@ -5007,8 +5075,8 @@ textarea {
     padding: 8%;
   }
   /*
-	NUCO Section
-	---------------------------------------*/
+  NUCO Section
+  ---------------------------------------*/
   .nuco-section .nuco-wrap {
     position: relative;
     top: auto;
@@ -5025,8 +5093,8 @@ textarea {
     padding: 8%;
   }
   /*
-	Team Section
-	---------------------------------------*/
+  Team Section
+  ---------------------------------------*/
   .widget_team-member-widget {
     width: 25%;
     margin: 10px 3%;
@@ -5034,8 +5102,8 @@ textarea {
     vertical-align: top;
   }
   /*
-	Phone Section
-	---------------------------------------*/
+  Phone Section
+  ---------------------------------------*/
   .about-section {
     padding: 8% 10%;
   }
@@ -5050,8 +5118,8 @@ textarea {
     margin: 0 2% 8%;
   }
   /*
-	Clients Section
-	---------------------------------------*/
+  Clients Section
+  ---------------------------------------*/
   .clients-section {
     padding: 5% 5%;
   }
@@ -5060,8 +5128,8 @@ textarea {
     margin: 2%;
   }
   /*
-	Clients Section
-	---------------------------------------*/
+  Clients Section
+  ---------------------------------------*/
   .cd-has-margins .cd-pricing-list > li {
     width: 32%;
   }
@@ -5074,21 +5142,21 @@ textarea {
     font-size: 1rem;
   }
   /*
-	Pricing Section
-	---------------------------------------*/
+  Pricing Section
+  ---------------------------------------*/
   .cd-has-margins .cd-select {
     padding: 1.2em 0;
   }
   /*
-	Portfolio Section
-	---------------------------------------*/
+  Portfolio Section
+  ---------------------------------------*/
   .portfolio-section .portfolio-item .portfolio-hover span {
     font-size: 16px;
     font-size: 1rem;
   }
   /*
-	Blog Section
-	---------------------------------------*/
+  Blog Section
+  ---------------------------------------*/
   .blog-wrap .blog-item {
     width: 45%;
     display: inline-block;
@@ -5097,16 +5165,16 @@ textarea {
     margin-bottom: 3%;
   }
   /*
-	Content
-	========================================== 
-	*/
+  Content
+  ========================================== 
+  */
   .metadata ul li {
     float: left;
   }
   /*
-	Sidebar
-	========================================== 
-	*/
+  Sidebar
+  ========================================== 
+  */
   #sidebar {
     padding-right: 0;
   }
@@ -5119,14 +5187,14 @@ textarea {
   }
 }
 /*
-	// Medium Breakpoint
-	// ------------------
-	*/
+  // Medium Breakpoint
+  // ------------------
+  */
 @media (min-width: 1346px) and (max-width: 1509px) {
   /*
-	Header
-	--------------------------------
-	*/
+  Header
+  --------------------------------
+  */
   .ql_nav_btn {
     top: 45px;
   }
@@ -5162,15 +5230,15 @@ textarea {
     width: 1200px;
   }
   /*
-	Content
-	========================================== 
-	*/
+  Content
+  ========================================== 
+  */
   .content_background {
     padding: 40px;
   }
   /*
-	Phone Section
-	---------------------------------------*/
+  Phone Section
+  ---------------------------------------*/
   .about-section {
     padding: 4% 6% 2% 6%;
   }
@@ -5179,8 +5247,8 @@ textarea {
     margin: 0 2% 5%;
   }
   /*
-	Pricing Section
-	---------------------------------------*/
+  Pricing Section
+  ---------------------------------------*/
   .cd-has-margins .cd-pricing-list > li {
     width: 30%;
     margin: 0 1%;
@@ -5197,9 +5265,9 @@ textarea {
     padding: 1.2em 0;
   }
   /*
-	Sidebar
-	========================================== 
-	*/
+  Sidebar
+  ========================================== 
+  */
   #sidebar .widget {
     padding: 0;
   }
@@ -5209,9 +5277,9 @@ textarea {
   }
 }
 /*
-	// Extra Larga Breakpoint
-	// ------------------
-	*/
+  // Extra Larga Breakpoint
+  // ------------------
+  */
 /*
 ==========================================
 LESS Variables and Mixins
