@@ -1,15 +1,15 @@
 @charset "UTF-8";
 /*
-Theme Name: k2
+Theme Name: K2
 Theme URI: http://littlemonsterdigital.co.uk
 Author: Little Monster Digital
 Author URI: http://littlemonsterdigital.co.uk
 Description: k2 is a WordPress theme developed for Kings Ski Club to promote the club, allow teams to register to race, display results from rounds or Finals, advertise the clubs sponsors to memebers and act as a focus for all the clubs news & events
-Version: 1.0.0
+Version: 1.3
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.en.html
-Text Domain: k2
-Tags: kings ski club
+Text Domain: K2
+Tags: Kings Ski Club
 */
 /*
 ----------------------------------------------------------------
@@ -36,9 +36,6 @@ LESS Variables and Mixins
 0. Global Styles
 ========================================== 
 */
-html {
-  
-}
 html, a {
   color:#c3f216;
   transition: 400ms;
@@ -47,10 +44,15 @@ a:hover {
   color:#999999;
 }
 body {
-  
+  background:#333;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family:arial, sans-serif;
+  color:#c3f216;
+  text-align:center;
+}
+.ksc-green {
+  color:#c3f216;
 }
 /*
 ==========================================
@@ -68,9 +70,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0.9375rem 0;
   background-size: cover;
   background-position: center;
-}
-.site-header {
-  
 }
 .home.page #header {
   margin-bottom: 0;
@@ -103,6 +102,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .logo_container {
   margin: 0;
+  padding:9px 0 0;
   text-align:center;
   display: block;
 }
@@ -183,13 +183,12 @@ Nav Menu
   margin: 0;
   display: block;
   min-height: 0;
-  padding-top:10px;
   text-align: right;
   border: none;
 }
 #jqueryslidemenu a {
   color: #c3f216;
-  trasition:1000ms;
+  transition:1000ms;
 }
 #jqueryslidemenu a:hover {
   opacity:0.7;
@@ -3922,12 +3921,12 @@ a img.aligncenter {
 }
 .wpcf7 input[type="text"],
 .wpcf7 input[type="email"] {
-  width: 50%;
+  width: 100%;
 }
 .wpcf7 select {
   font-size: 14px;
   font-size: 0.875rem;
-  width:33%
+  width:33%;
 }
 .wpcf7 input[type="checkbox"],
 .wpcf7 input[type="radio"] {
@@ -3943,22 +3942,23 @@ a img.aligncenter {
   line-height: 20px;
 }
 .wpcf7 textarea {
-  width: 80%;
+  width: 100%;
 }
 input.wpcf7-tel {
-    width: 50%;
+    width: 100%;
 }
 .wpcf7 input[type="submit"] {
-  width: auto;
-  border-color: #555555;
+  padding: 30px 20px;
+  line-height:1px;
   -webkit-transition: background-color 200ms;
   -o-transition: background-color 200ms;
   transition: background-color 200ms;
-  padding: 6px 15px;
 }
-.wpcf7 input[type="submit"]:hover {
-  background-color: #555555;
-  color: #fff;
+.wpcf7 input[type="submit"]:hover,
+.wpcf7 input[type="submit"]:focus {
+  background:#333;
+  color:#c3f216;
+  border:1px solid #c3f216;
 }
 .wpcf7 input[disabled="disabled"] {
   opacity: 0.3;
@@ -3968,6 +3968,12 @@ input.wpcf7-tel {
 }
 .wpcf7-not-valid {
   border-color: red;
+}
+.select-club {
+  width:100%;
+}
+.select-teams {
+  margin:0 auto;
 }
 /*
 // Visual Composer
@@ -4110,6 +4116,50 @@ img {
   max-width: 100%;
   height: auto;
 }
+.nav-tabs > li{
+  width: 33%;
+  text-align: center;
+  transition:300ms;
+}
+.nav-tabs > li > a {
+  color:#c3f216;
+}
+.nav-tabs > li > a:hover {
+  color:#555;
+}
+.tab-pane {
+  padding:25px 0 75px 0;
+}
+.league-table .league-table-head{
+  font-size:1.1em;
+  font-weight:600;
+}
+.league-table ul{
+  list-style:none;
+  padding: 0 0 0.4em;
+  border-bottom:1px solid #808080;
+}
+.league-table .tbl-pos{
+  width:5%;
+}
+.league-table .tbl-team{
+  width:30%;
+}
+li.tbl-qlf {
+  margin-bottom:0.5em;
+  padding-bottom:0.5em;
+  list-style: none;
+}
+li.tbl-qlf.tbl-last {
+  border-bottom:none;
+}
+.row.qualified-table {
+  text-align:center;
+}
+.row.wildcards {
+  padding: 1em 0;
+  text-align:center;
+}
 /* Section Title
 -------------------------------------------------- */
 .section-title {
@@ -4226,6 +4276,19 @@ img {
 -------------------------------------------------- */
 /* Override base .btn styles */
 /* Apply text and background changes to three key states: default, hover, and active (click). */
+.btn-kings{
+  background:#c3f216;
+  color:#333;
+  border:1px solid #c3f216;
+  margin:0 auto;
+  padding:1em 2.5em;
+  border-radius: 3px;
+  transition:500ms;
+}
+.btn-kings:hover {
+  background:#333;
+  color:#c3f216;
+}
 .btn-ql,
 .btn-ql:hover,
 .btn-ql:active {
@@ -4599,6 +4662,7 @@ textarea {
     float: none;
     margin-right: 0;
     width: 82%;
+    min-width:271px;
   }
   .logo_container a:hover {
     text-decoration: none;
@@ -4932,18 +4996,27 @@ textarea {
 	// ------------------
 	*/
 @media (min-width: 768px) and (max-width: 1345px) {
+  body {
+    padding:40px 0 0;
+  }
   .container {
     width: 96%;
   }
   /*
 	Header
 	========================================== 
-	*/
+  */
+  .navbar-fixed-top {
+    height:40px;
+  }
   .logo_container {
-    margin-bottom: 10px;
-	padding-top:7px;
-	padding-bottom:7px;
+    min-width:270px;
+	  padding-top:9px;
+	  padding-bottom:9px;
     text-align: center;
+  }
+  .logo_container h4 {
+    margin-bottom:0;
   }
   #jqueryslidemenu {
     text-align: right;

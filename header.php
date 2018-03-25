@@ -48,9 +48,8 @@
 						</button>
 					</div>
 					<div class="logo_container col-xs-2">
-                		    <a href="http://kingsski.club" style="text-decoration:none;">
-                                <img style="max-height:35px;width:auto;" src="/wp-content/themes/k2/images/kings-header-logo.png">
-                                <div><small style="color:#c3f216;"><strong>KINGS</strong> SKI CLUB</small></div>
+                		    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" style="text-decoration:none;">
+                                <h1 style="font-size: 20px;font-weight:400;"><strong>KINGS</strong> Ski Club</h1>
                             </a>
                         </div><!-- /logo_container -->
 					<div class="col-xs-10" style="text-align:right;">
