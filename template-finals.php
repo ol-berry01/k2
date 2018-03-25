@@ -14,28 +14,9 @@ Template Name: Finals Registration
 
 get_header(); ?>
 
-	<main id="main" class="site-main col-md-12" role="main">
+	<main id="main" class="site-main col-sm-10 col-sm-offset-1" role="main" style="margin-top:100px;">
     
-    <div class="container">
-    	<div class="row">
-        	<?php echo do_shortcode( '[contact-form-7 id="27" title="Finals Registration"]' ); ?>
-        </div>
-    </div>
-    
-    <?php echo do_shortcode( '[contact-form-7 id="27" title="Finals Registration"]' ); ?>
-
-		<?php while ( have_posts() ) : the_post(); ?>
-
-			<?php get_template_part( 'template-parts/content', 'page' ); ?>
-
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
-
-		<?php endwhile; // End of the loop. ?>
+		<?php echo do_shortcode( '[contact-form-7 id="186" title="Finals 2018 Registration"]' ); ?>
 
 	</main><!-- #main -->
 

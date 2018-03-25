@@ -8,19 +8,44 @@
         
             // Front Page Spcific Items
         
-                // Front Image Layout                    
+                // Front Slider Layout                    
                 if( get_row_layout() == 'slider_layout' ): ?>
                 
                     <?php get_template_part( 'template-parts/section-slider', 'builder' )?>
                     
-                <!-- End: Front Image Layout -->
+                <!-- End: Slider Layout -->
                 
-                <!-- Front Intro Layout -->
+                <!-- Intro Layout -->
                 
                 <?php elseif( get_row_layout() == 'intro_layout' ): ?>
                 
                     <?php get_template_part( 'template-parts/section-intro', 'builder' )?>
-                <!-- End: Front Intro Layout -->
+                    
+                <!-- End: Intro Layout -->
+
+                <!-- Image Layout -->
+                
+                <?php elseif( get_row_layout() == 'break_layout' ): ?>
+                
+                    <?php get_template_part( 'template-parts/section-break', 'builder' )?>
+
+                <!-- End: Image Layout -->
+
+                <!-- Image Layout -->
+                
+                <?php elseif( get_row_layout() == 'qualified_layout' ): ?>
+                
+                    <?php get_template_part( 'template-parts/section-qualified', 'builder' )?>
+
+                <!-- End: Image Layout -->
+
+                <!-- general_purpose -->
+
+                <?php elseif( get_row_layout() == 'general_layout' ): ?>
+                
+                    <?php get_template_part( 'template-parts/section-general', 'builder' )?>
+
+                <!-- general_purpose -->
                 
 
             <?php endif; ?>
