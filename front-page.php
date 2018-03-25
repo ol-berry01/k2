@@ -19,9 +19,6 @@ get_header(); ?>
 		<?php get_template_part( 'template-parts/section-page', 'front-page' ); ?>
 
 
-		<?php get_template_part( 'template-parts/section-about', 'front-page' ); ?>
-
-
 		<?php get_template_part( 'template-parts/section-image', 'front-page' ); ?>
 
 	</main><!-- #main -->

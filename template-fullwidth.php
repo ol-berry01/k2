@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Finals Registration
+Template Name: Full Width
 */
 ?>
 <?php
