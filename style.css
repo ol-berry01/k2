@@ -54,6 +54,7 @@ h1, h2, h3, h4, h5, h6 {
 .ksc-green {
   color:#c3f216;
 }
+
 /*
 ==========================================
 1. Header
@@ -229,6 +230,7 @@ Nav Menu
   margin-top: 0;
 }
 #jqueryslidemenu ul.nav > li > ul > li a {
+  background:#222e3c;
   font-size: 13px;
   font-size: 0.8125rem;
   padding: 0.5em 1.42857142857143em;
@@ -236,6 +238,7 @@ Nav Menu
 }
 #jqueryslidemenu ul.nav > li > ul > li a:hover {
   background-color: rgba(0, 0, 0, 0.04);
+  color:#222e3c;
 }
 #jqueryslidemenu ul.nav > li > ul > li.menu-item-has-children > a:hover,
 #jqueryslidemenu ul.nav > li > ul > li.has-image > a:hover {
@@ -3927,6 +3930,12 @@ a img.aligncenter {
   font-size: 14px;
   font-size: 0.875rem;
   width:33%;
+}
+.wpcf7 select.half {
+	width:50%;
+}
+.wpcf7 select.full {
+	width:100%;
 }
 .wpcf7 input[type="checkbox"],
 .wpcf7 input[type="radio"] {

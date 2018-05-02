@@ -52,7 +52,7 @@
                                 <h1 style="font-size: 20px;font-weight:400;"><strong>KINGS</strong> Ski Club</h1>
                             </a>
                         </div><!-- /logo_container -->
-					<div class="col-xs-10" style="text-align:right;">
+					<div class="col-xs-9" style="text-align:right;">
 	                	<div class="collapse navbar-collapse" id="ql_nav_collapse">
 	                        <nav id="jqueryslidemenu" class="jqueryslidemenu navbar " role="navigation">
 	                            <?php
