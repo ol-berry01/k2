@@ -15,7 +15,6 @@ Tags: Kings Ski Club
 ----------------------------------------------------------------
 TABLE OF CONTENTS
 ----------------------------------------------------------------
-0. Global Styles
 1. Header
 2. Home
 3. Blog & Pages
@@ -31,29 +30,7 @@ TABLE OF CONTENTS
 LESS Variables and Mixins
 ----------------------------------------------------------------
 */
-/*
-==========================================
-0. Global Styles
-========================================== 
-*/
-html, a {
-  color:#c3f216;
-  transition: 400ms;
-}
-a:hover {
-  color:#999999;
-}
-body {
-  background:#333;
-}
-h1, h2, h3, h4, h5, h6 {
-  font-family:arial, sans-serif;
-  color:#c3f216;
-  text-align:center;
-}
-.ksc-green {
-  color:#c3f216;
-}
+
 
 /*
 ==========================================
@@ -4113,13 +4090,15 @@ input.wpcf7-tel {
 html {
   font-size: 1em;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+html, a {
+  color:#c3f216;
+  transition: 400ms;
+}
+h1,h2,h3,h4,h5,h6 {
+  color:#c3f216;
   margin-top: 0;
+  font-family:arial, sans-serif;
+  text-align:center;
 }
 img {
   max-width: 100%;
@@ -4168,6 +4147,28 @@ li.tbl-qlf.tbl-last {
 .row.wildcards {
   padding: 1em 0;
   text-align:center;
+}
+
+/*
+==========================================
+0. Global Styles
+========================================== 
+*/
+
+a:hover {
+  color:#999999;
+}
+body {
+  background:#333;
+}
+h1, h2, h3, h4, h5, h6 {
+  
+}
+.ksc-green {
+  color:#c3f216;
+}
+.ksc-grey {
+  color:#c6c6c6;
 }
 /* Section Title
 -------------------------------------------------- */

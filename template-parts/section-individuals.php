@@ -51,12 +51,83 @@
     .results-table .tbl-rnd{
         width:6.5%;
     }
+    .team-container {
+        padding:2em 0;
+    }
 </style>
 <div class="row" style="padding-top:150px;">
     <div class="col-sm-10 col-sm-offset-1">
-            <h2 style="color:#c6c6c6;margin-bottom:2em;"><span class="ksc-green"><strong>KINGS</strong> Ski Club</span> Finals Results</h2>
-        <div>
+            <h2 class="ksc-grey"><span class="ksc-green"><strong>KINGS</strong> Ski Club</span> <?php the_sub_field('indv_year'); ?> Finals Results</h2>
 
+        <div class="team-results">
+
+            <?php 
+                // vars
+                $team_1mixed = get_sub_field('team_1mixed');
+                $team_2mixed = get_sub_field('team_2mixed');
+                $team_3mixed = get_sub_field('team_3mixed');
+                $team_1board = get_sub_field('team_1board');
+                $team_2board = get_sub_field('team_2board');
+                $team_3board = get_sub_field('team_3board');
+                $team_1ladies = get_sub_field('team_1ladies');
+                $team_2ladies = get_sub_field('team_2ladies');
+                $team_3ladies = get_sub_field('team_3ladies');
+            ?>
+            <div class="row team-container">
+
+                <div class="col-sm-4">
+                <h3>Mixed Teams</h3>
+                <div class="row">
+                    <div class="col-xs-3"><p class="lead">1<sup>st</sup></p></div>
+                    <div class="col-xs-9"><p class="lead"><?php echo $team_1mixed; ?></p></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-3"><p class="lead">2<sup>nd</sup></p></div>
+                    <div class="col-xs-9"><p class="lead"><?php echo $team_2mixed; ?></p></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-3"><p class="lead">3<sup>rd</sup></p></div>
+                    <div class="col-xs-9"><p class="lead"><?php echo $team_3mixed; ?></p></div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <h3>Snowboard Teams</h3>
+                <div class="row">
+                    <div class="col-xs-3"><p class="lead">1<sup>st</sup></p></div>
+                    <div class="col-xs-9"><p class="lead"><?php echo $team_1board; ?></p></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-3"><p class="lead">2<sup>nd</sup></p></div>
+                    <div class="col-xs-9"><p class="lead"><?php echo $team_2board; ?></p></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-3"><p class="lead">3<sup>rd</sup></p></div>
+                    <div class="col-xs-9"><p class="lead"><?php echo $team_3board; ?></p></div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <h3>Ladies Teams</h3>
+                <div class="row">
+                    <div class="col-xs-3"><p class="lead">1<sup>st</sup></p></div>
+                    <div class="col-xs-9"><p class="lead"><?php echo $team_1ladies; ?></p></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-3"><p class="lead">2<sup>nd</sup></p></div>
+                    <div class="col-xs-9"><p class="lead"><?php echo $team_2ladies; ?></p></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-3"><p class="lead">3<sup>rd</sup></p></div>
+                    <div class="col-xs-9"><p class="lead"><?php echo $team_3ladies; ?></p></div>
+                </div>
+            </div>
+
+            </div>
+            
+
+        </div>
+        <hr>
+        <div>
+            <h3 style="padding:1em 0 1em">Individual Results</h3>
             <!-- Nav tabs -->
             <ul class="nav nav-tabs" role="tablist">
                 <li role="presentation" class="active"><a href="#lboard" aria-controls="lboard" role="tab" data-toggle="tab">Ladies Snowboarding</a></li>
@@ -111,6 +182,7 @@
                                     <?php endwhile; ?>
                                 <?php endif; ?>
                             </div>
+                            <a class="btn btn-kings" style="margin:2em 0 0" href="<?php the_sub_field('indv_lboard_dload'); ?>" target="_blank">Download Ladies Snowboard Results</a>
                         </div>
                     
                     </div><!-- End: Row -->
@@ -158,8 +230,8 @@
                                     <?php endwhile; ?>
                                 <?php endif; ?>
                             </div>
+                            <a class="btn btn-kings" style="margin:2em 0 0" href="<?php the_sub_field('indv_mboard_dload'); ?>" target="_blank">Download Ladies Skiing Results</a>
                         </div>
-
                     </div>
                     
                 </div>
@@ -206,6 +278,7 @@
                                     <?php endwhile; ?>
                                 <?php endif; ?>
                             </div>
+                            <a class="btn btn-kings" style="margin:2em 0 0" href="<?php the_sub_field('indv_lski_dload'); ?>" target="_blank">Download Mens Snowboard Results</a>
                         </div>
 
                     </div>
@@ -253,6 +326,7 @@
                                     <?php endwhile; ?>
                                 <?php endif; ?>
                             </div>
+                            <a class="btn btn-kings" style="margin:2em 0 0" href="<?php the_sub_field('indv_mski_dload'); ?>" target="_blank">Download Mens Ski Results</a>
                         </div>
 
                     </div>
